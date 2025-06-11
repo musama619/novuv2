@@ -193,7 +193,7 @@ export class AuthController {
 
   @ExternalApiAccessible()
   @RequireAuthentication()
-  @Get('/subscriber-token/:subscriberId/:environmentId')Add commentMore actions
+  @Get('/subscriber-token/:subscriberId/:environmentId')
   async getSubscriberToken(
     @UserSession() user: UserSessionData,
     @Param('subscriberId') subscriberId: string,
